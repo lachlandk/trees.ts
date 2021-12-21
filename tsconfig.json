@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "es6",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

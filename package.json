@@ -1,0 +1,30 @@
+{
+	"name": "@lachlandk/trees",
+	"version": "0.1.0",
+	"description": "",
+	"main": "dist/trees.js",
+	"module": "dist/trees.js",
+	"types": "dist/trees.d.ts",
+	"type": "module",
+	"scripts": {
+		"test": "mocha tests"
+	},
+	"keywords": [],
+	"author": "Lachlan Dufort-Kennett",
+	"license": "MIT",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"merge2": "^1.4.1",
+		"mocha": "^9.0.2",
+		"typescript": "^4.3.5"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lachlandk/trees.ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lachlandk/trees.ts/issues"
+	},
+	"homepage": "https://github.com/lachlandk/trees.ts#readme"
+}
