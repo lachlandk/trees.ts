@@ -1,5 +1,5 @@
 export declare class BinaryTreeNode {
-    data: unknown;
+    value: unknown;
     left: BinaryTreeNode | null;
     right: BinaryTreeNode | null;
     constructor(data: unknown);

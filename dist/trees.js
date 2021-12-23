@@ -2,7 +2,7 @@ export class BinaryTreeNode {
     constructor(data) {
         this.left = null;
         this.right = null;
-        this.data = data;
+        this.value = data;
     }
 }
 export class BinaryTree {
@@ -23,7 +23,7 @@ export class BinaryTree {
     }
     insertNode(node, newNode) {
         // if newNode >= node, move right, else move left
-        if (this.order(newNode.data, node.data)) {
+        if (this.order(newNode.value, node.value)) {
             // if right is null, insert node, else search again with right as new root
             if (node.right === null) {
                 node.right = newNode;
