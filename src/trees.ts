@@ -3,14 +3,14 @@ export class BinaryTreeNode {
     left: BinaryTreeNode | null = null
     right : BinaryTreeNode | null = null
 
-    constructor(data: unknown) {
-        this.value = data;
+    constructor(value: unknown = undefined) {
+        this.value = value;
     }
 }
 
 export class BinaryTree {
     root: BinaryTreeNode | null = null
-    order: ((data1: unknown, data2: unknown) => boolean) = ((data1, data2) => (data1 as number) >= (data2 as number))
+    order: ((value1: unknown, value2: unknown) => boolean) = ((value1, value2) => (value1 as number) >= (value2 as number))
 
     insert(data: unknown) {
         const node = new BinaryTreeNode(data)
