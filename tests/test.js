@@ -7,16 +7,16 @@ suite("Testing BinaryTree insert method", function() {
 
 	test("Insert into an empty tree", function() {
 		tree.insert(2);
-		assert.strictEqual(tree.root.data, 2);
+		assert.strictEqual(tree.root.value, 2);
 	});
 
 	test("Insert into the left side", function() {
 		tree.insert(1);
-		assert.strictEqual(tree.root.left.data, 1);
+		assert.strictEqual(tree.root.left.value, 1);
 	});
 
 	test("Insert into the right side", function() {
 		tree.insert(3);
-		assert.strictEqual(tree.root.right.data, 3);
+		assert.strictEqual(tree.root.right.value, 3);
 	});
 });
