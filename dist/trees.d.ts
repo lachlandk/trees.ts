@@ -3,10 +3,12 @@ export declare class BinaryTreeNode {
     left: BinaryTreeNode | null;
     right: BinaryTreeNode | null;
     constructor(value?: unknown);
+    toString(): unknown;
 }
 export declare class BinaryTree {
     root: BinaryTreeNode | null;
     order: ((value1: unknown, value2: unknown) => boolean);
     insert(data: unknown): void;
     insertNode(node: BinaryTreeNode, newNode: BinaryTreeNode): void;
+    toString(): string;
 }

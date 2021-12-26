@@ -1,10 +1,14 @@
 export class BinaryTreeNode {
-    value: unknown;
+    value: unknown
     left: BinaryTreeNode | null = null
     right : BinaryTreeNode | null = null
 
     constructor(value: unknown = undefined) {
         this.value = value;
+    }
+
+    toString() {
+        return this.value;
     }
 }
 
@@ -41,5 +45,28 @@ export class BinaryTree {
                 this.insertNode(node.left, newNode)
             }
         }
+    }
+
+    // height(): number {}
+
+    toString(): string {
+        const lines: string[] = ["{"];
+        const analyse =  (node: BinaryTreeNode, depth: number) => {
+            lines.push("-".repeat(depth) + " "+ node.toString());
+            if (node.left !== null) {
+                analyse(node.left, depth + 1);
+            }
+            if (node.right !== null) {
+                analyse(node.right, depth + 1);
+            }
+        }
+        if (this.root !== null) {
+            analyse(this.root, 0);
+        } else {
+            lines.push("");
+        }
+
+        lines.push("}");
+        return lines.join("\n");
     }
 }
